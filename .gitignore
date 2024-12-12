@@ -1,3 +1,5 @@
 net_sec_ml_venv
 .env
 venv_net_sec_ml
+logs
+mlruns
