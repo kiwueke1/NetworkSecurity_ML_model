@@ -61,6 +61,8 @@ This project is packaged as a docker container and deployed to AWS Elastic Conta
    - Environment Variables
    - The following GitHub Secrets must be configured for the workflow:
 
+###Environment Variables
+The following GitHub Secrets must be configured on user's Github account for the workflow:
 - **`AWS_ACCESS_KEY_ID:`** Your AWS access key for authentication.
 - **`AWS_SECRET_ACCESS_KEY:`** Your AWS secret access key for authentication.
 - **`AWS_REGION:`** AWS region (e.g., `us-east-1`).
