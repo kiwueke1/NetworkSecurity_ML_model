@@ -46,6 +46,27 @@ The core of the project, containing all the essential modules for building and r
 - **`README.md`**: Project documentation (this file).
 
 ---
+### **Deployment instructions**
+This project is packaged as a docker container and deployed to AWS Elastic Container Registry (ECR). The Continuous Integration (CI) and Continuous Deployment (CD) of this code base is automated using Github Actions.
+
+#### How It Works
+- **`Trigger:` The workflow is triggered on every push to the main branch.
+- **`Continuous Integration:`
+- ***Build the Docker image using the Dockerfile.
+- ***Push the image to an AWS ECR repository.
+- **Continuous Deployment:
+- **Pull the latest Docker image from ECR.
+- **Stop any running containers with the same name.
+- **Run a new container with the updated image on the specified server.
+- **Environment Variables
+- **The following GitHub Secrets must be configured for the workflow:
+
+AWS_ACCESS_KEY_ID: Your AWS access key for authentication.
+AWS_SECRET_ACCESS_KEY: Your AWS secret access key.
+AWS_REGION: AWS region (e.g., us-east-1).
+AWS_ECR_LOGIN_URI: Amazon ECR login URI (e.g., 123456789012.dkr.ecr.us-east-1.amazonaws.com).
+ECR_REPOSITORY_NAME: The name of the ECR repository.
+Wor
 
 ## **Setup Instructions**
 
