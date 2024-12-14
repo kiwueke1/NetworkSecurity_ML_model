@@ -52,8 +52,8 @@ This project is packaged as a docker container and deployed to AWS Elastic Conta
 #### How It Works
 - **`Trigger:`** The workflow is triggered on every push to the main branch.
 - **`Continuous Integration:`**
-- ***Build the Docker image using the Dockerfile.**
-- ***Push the image to an AWS ECR repository.**
+-- Build the Docker image using the Dockerfile
+-- Push the image to an AWS ECR repository.
 - **`Continuous Deployment:`**
 - **Pull the latest Docker image from ECR.
 - **Stop any running containers with the same name.
