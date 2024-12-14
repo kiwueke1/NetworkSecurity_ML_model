@@ -37,7 +37,7 @@ The core of the project, containing all the essential modules for building and r
 ---
 
 ### **2. Root-Level Files**
-- **`app.py`**: Main entry point for running the application, including API endpoints.
+- **`app.py`**: Main entry point for running the application, exposes API endpoints to train a model and make predictions on a new dataset.
 - **`main.py`**: Orchestrates the training pipeline.
 - **`requirements.txt`**: Lists all Python dependencies for the project.
 - **`Dockerfile`**: Defines the containerization process for the project.
