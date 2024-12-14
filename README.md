@@ -52,14 +52,14 @@ This project is packaged as a docker container and deployed to AWS Elastic Conta
 #### How It Works
 1. **`Trigger:`** The workflow is triggered on every push to the main branch.
 2. **`Continuous Integration:`**
-- Build the Docker image using the Dockerfile
-- Push the image to an AWS ECR repository.
-- **`Continuous Deployment:`**
-- **Pull the latest Docker image from ECR.
-- **Stop any running containers with the same name.
-- **Run a new container with the updated image on the specified server.
-- **Environment Variables
-- **The following GitHub Secrets must be configured for the workflow:
+   - Build the Docker image using the Dockerfile
+   - Push the image to an AWS ECR repository.
+3. **`Continuous Deployment:`**
+   - Pull the latest Docker image from ECR.
+   - Stop any running containers with the same name.
+   - Run a new container with the updated image on the specified server.
+   - Environment Variables
+   - The following GitHub Secrets must be configured for the workflow:
 
 AWS_ACCESS_KEY_ID: Your AWS access key for authentication.
 AWS_SECRET_ACCESS_KEY: Your AWS secret access key.
