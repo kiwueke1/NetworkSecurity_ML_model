@@ -50,10 +50,10 @@ The core of the project, containing all the essential modules for building and r
 This project is packaged as a docker container and deployed to AWS Elastic Container Registry (ECR). The Continuous Integration (CI) and Continuous Deployment (CD) of this code base is automated using Github Actions.
 
 #### How It Works
-- **`Trigger:`** The workflow is triggered on every push to the main branch.
-- **`Continuous Integration:`**
--- Build the Docker image using the Dockerfile
--- Push the image to an AWS ECR repository.
+1. **`Trigger:`** The workflow is triggered on every push to the main branch.
+2. **`Continuous Integration:`**
+- Build the Docker image using the Dockerfile
+- Push the image to an AWS ECR repository.
 - **`Continuous Deployment:`**
 - **Pull the latest Docker image from ECR.
 - **Stop any running containers with the same name.
