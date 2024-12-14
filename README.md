@@ -1,5 +1,4 @@
-### in progress
-k# NetworkSecurity
+# NetworkSecurity ML model
 
 The `NetworkSecurity` project is an end-to-end machine learning pipeline aimed at analyzing network traffic data for security insights. Some features of our data set includes URL_Length, DNSRecord, HTTPS_token etc and we use these features to train a model that predicts if the traffic is malicious or not.
 
