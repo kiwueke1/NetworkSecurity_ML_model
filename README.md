@@ -61,12 +61,12 @@ This project is packaged as a docker container and deployed to AWS Elastic Conta
    - Environment Variables
    - The following GitHub Secrets must be configured for the workflow:
 
-AWS_ACCESS_KEY_ID: Your AWS access key for authentication.
-AWS_SECRET_ACCESS_KEY: Your AWS secret access key.
-AWS_REGION: AWS region (e.g., us-east-1).
-AWS_ECR_LOGIN_URI: Amazon ECR login URI (e.g., 123456789012.dkr.ecr.us-east-1.amazonaws.com).
-ECR_REPOSITORY_NAME: The name of the ECR repository.
-Wor
+- **`AWS_ACCESS_KEY_ID:`** Your AWS access key for authentication.
+- **`AWS_SECRET_ACCESS_KEY:`** Your AWS secret access key for authentication.
+- **`AWS_REGION:`** AWS region (e.g., `us-east-1`).
+- **`AWS_ECR_LOGIN_URI:`** Amazon ECR login URI (e.g., `123456789012.dkr.ecr.us-east-1.amazonaws.com`).
+- **`ECR_REPOSITORY_NAME:`** The name of the ECR repository.
+
 
 ## **Setup Instructions**
 
