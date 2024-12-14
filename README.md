@@ -1,6 +1,6 @@
 # NetworkSecurity ML model
 
-The `NetworkSecurity` project is an end-to-end machine learning pipeline aimed at analyzing network traffic data for security insights. Some features of our data set includes URL_Length, DNSRecord, HTTPS_token etc and we use these features to train a model that predicts if the traffic is malicious or not.
+This `NetworkSecurity` project is an end-to-end machine learning pipeline aimed at analyzing network traffic data for security insights. Some features of our data set includes URL_Length, DNSRecord, HTTPS_token etc and we use these features to train a model that predicts if the traffic is malicious or not.
 
 This repository uses object-oriented programming and is structured to enable modularity, scalability, and ease of development. It is implemented in Python and organized into components, utilities, and other helper scripts.
 
